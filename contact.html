@@ -46,9 +46,9 @@
       <p>Call or text: <a href="tel:+15127640723">512.764.0723</a><br>Email: <a href="mailto:greg@askgregaboutannuities.com">greg@askgregaboutannuities.com</a></p>
       <p class="small">Please don't send Social Security or account numbers by email, text or this form.</p>
     </div>
-    <form class="form" name="contact" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="company">
+    <form class="form" name="contact" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="contact">
-      <p class="hidden"><label>Leave this empty: <input name="company"></label></p>
+      <p class="hidden" aria-hidden="true"><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
       <h2 style="font-size:26px">Send a question</h2>
       <div class="row">
         <div class="field"><label for="f-name">Name</label><input type="text" id="f-name" name="name" required autocomplete="name"></div>
