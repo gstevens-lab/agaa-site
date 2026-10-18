@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retirement Income Gap Calculator | Ask Greg About Annuities</title>
+<meta name="description" content="Free calculator: compare your monthly retirement needs to Social Security, pensions and other income, and see the gap your savings have to fill.">
+<link rel="canonical" href="https://askgregaboutannuities.com/income-gap-calculator">
+<meta property="og:title" content="Retirement Income Gap Calculator | Ask Greg About Annuities">
+<meta property="og:description" content="Free calculator: compare your monthly retirement needs to Social Security, pensions and other income, and see the gap your savings have to fill.">
+<meta property="og:url" content="https://askgregaboutannuities.com/income-gap-calculator">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://askgregaboutannuities.com/greg-headshot.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="mark">AG</span>Ask Greg About Annuities</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav">
+      <a href="/cd-alternatives">CD Coming Due?</a><a href="/retirement-income">Retirement Income</a><a href="/annuities-explained">Annuities Explained</a><a href="/faq">FAQ</a><a href="/about">About</a><a href="/contact">Contact</a>
+      <a class="btn btn-primary" href="https://calendar.app.google/dnq1rd28JYfRDZoRA" target="_blank" rel="noopener">Schedule a call</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" style="padding-bottom:30px">
+  <div class="narrow">
+    <div class="eyebrow">Free calculator</div>
+    <h1>What's your retirement income gap?</h1>
+    <p class="lead">Your income gap is what's left over after Social Security, pensions and other steady income. It's the amount your savings will have to cover every month.</p>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <form class="calc" id="gap-calc" onsubmit="return false">
+      <div>
+        <div class="field"><label for="g-need">Monthly spending in retirement <span class="hint">(essentials plus what you want to do)</span></label>
+          <div class="input-wrap has-pre"><span class="pre">$</span><input type="number" id="g-need" value="6500" min="0" step="100" inputmode="decimal"></div></div>
+        <div class="field"><label for="g-ss">Your Social Security <span class="hint">(monthly, from ssa.gov)</span></label>
+          <div class="input-wrap has-pre"><span class="pre">$</span><input type="number" id="g-ss" value="2400" min="0" step="50" inputmode="decimal"></div></div>
+        <div class="field"><label for="g-ss2">Spouse's Social Security <span class="hint">(monthly)</span></label>
+          <div class="input-wrap has-pre"><span class="pre">$</span><input type="number" id="g-ss2" value="1300" min="0" step="50" inputmode="decimal"></div></div>
+        <div class="field"><label for="g-pension">Pensions <span class="hint">(monthly)</span></label>
+          <div class="input-wrap has-pre"><span class="pre">$</span><input type="number" id="g-pension" value="0" min="0" step="50" inputmode="decimal"></div></div>
+        <div class="field"><label for="g-other">Other steady income <span class="hint">(rental, part-time work)</span></label>
+          <div class="input-wrap has-pre"><span class="pre">$</span><input type="number" id="g-other" value="0" min="0" step="50" inputmode="decimal"></div></div>
+        <div class="field"><label for="g-years">Years in retirement to plan for</label>
+          <select id="g-years"><option>20</option><option selected>25</option><option>30</option><option>35</option></select></div>
+      </div>
+      <div class="results" aria-live="polite">
+        <h3>Your monthly income gap</h3>
+        <div class="result-big" id="r-gap">&ndash;</div>
+        <div class="result-row"><span>Guaranteed income</span><strong id="r-have">&ndash;</strong></div>
+        <div class="result-row"><span>Share of spending covered</span><strong id="r-covered">&ndash;</strong></div>
+        <div class="result-row"><span>Gap per year</span><strong id="r-gap-yr">&ndash;</strong></div>
+        <div class="result-row"><span>Gap over <span id="r-gap-years">25 years</span></span><strong id="r-gap-total">&ndash;</strong></div>
+        <p style="margin-top:16px;font-size:15px" id="r-msg"></p>
+        <p class="note">Does not include inflation, taxes or investment growth. For illustration only.</p>
+        <a class="btn btn-brass" style="margin-top:10px" href="https://calendar.app.google/dnq1rd28JYfRDZoRA" target="_blank" rel="noopener">Talk through my gap</a>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="narrow">
+    <h2>What to do with your number</h2>
+    <p>Most people plan to cover the gap by withdrawing from savings. That works, as long as the market cooperates and the money lasts as long as you do. The alternative is to cover the essential part of the gap with guaranteed income, so the bills get paid no matter what the market does.</p>
+    <p>On a call, I'll look at your gap, your savings and your timeline, and show you a few ways to close it, including options that don't involve an annuity.</p>
+    <p><a href="/retirement-income">How guaranteed income works &rarr;</a></p>
+  </div>
+</section>
+<section class="dark">
+  <div class="narrow center">
+    <h2>Have a question about your money?</h2>
+    <p>Bring me the numbers: a CD that's coming due, a 401(k) you're about to roll over, or an illustration someone sent you. I'll give you a straight read on it. The call is free and commits you to nothing.</p>
+    <div class="btn-row" style="justify-content:center">
+      <a class="btn btn-brass" href="https://calendar.app.google/dnq1rd28JYfRDZoRA" target="_blank" rel="noopener">Schedule a call</a>
+      <a class="btn btn-ghost" style="border-color:#F1D9A8;color:#F1D9A8" href="tel:+15127640723">Call or text 512.764.0723</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Ask Greg About Annuities</h4>
+        <p>Greg Stevens, independent licensed financial professional.<br>Austin, Texas. Licensed since 2004.</p>
+        <p><a href="tel:+15127640723">512.764.0723</a><br><a href="mailto:greg@askgregaboutannuities.com">greg@askgregaboutannuities.com</a></p>
+      </div>
+      <div>
+        <h4>Start here</h4>
+        <ul>
+          <li><a href="/cd-alternatives">CD coming due?</a></li>
+          <li><a href="/retirement-income">Retirement income</a></li>
+          <li><a href="/income-gap-calculator">Income gap calculator</a></li>
+          <li><a href="/questions-to-ask">5 questions before you buy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Learn more</h4>
+        <ul>
+          <li><a href="/annuities-explained">Annuities in plain English</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/about">About Greg</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="disclaimer">
+      <p>This site is for general information only. It is not a recommendation to buy any specific product and is not tax or legal advice. Annuities are long-term insurance contracts. Features, rates and availability vary by carrier and state. Guarantees are backed by the financial strength and claims-paying ability of the issuing insurance company. Withdrawals above the contract's free amount during the surrender period may be subject to surrender charges, and withdrawals before age 59&frac12; may be subject to a 10% IRS penalty. Talk with Greg directly before making any decision. Not affiliated with any single insurance carrier.</p>
+      <p>&copy; 2026 Greg Stevens, Ask Greg About Annuities &middot; <a href="/privacy">Privacy Policy</a> &middot; <a href="/terms">Terms &amp; SMS Terms</a></p>
+    </div>
+  </div>
+</footer>
+<script src="/site.js"></script>
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6abc263bb9739b9592ab30f6"></script>
+</body>
+</html>

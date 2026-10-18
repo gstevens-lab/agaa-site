@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CD Coming Due? Compare CDs and MYGAs | Ask Greg About Annuities</title>
+<meta name="description" content="Before you renew a CD, see how a multi-year guaranteed annuity (MYGA) compares, including tax-deferred growth. Free calculator and a straight answer from Greg Stevens.">
+<link rel="canonical" href="https://askgregaboutannuities.com/cd-alternatives">
+<meta property="og:title" content="CD Coming Due? Compare CDs and MYGAs | Ask Greg About Annuities">
+<meta property="og:description" content="Before you renew a CD, see how a multi-year guaranteed annuity (MYGA) compares, including tax-deferred growth. Free calculator and a straight answer from Greg Stevens.">
+<meta property="og:url" content="https://askgregaboutannuities.com/cd-alternatives">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://askgregaboutannuities.com/greg-headshot.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="mark">AG</span>Ask Greg About Annuities</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav">
+      <a href="/cd-alternatives" aria-current="page">CD Coming Due?</a><a href="/retirement-income">Retirement Income</a><a href="/annuities-explained">Annuities Explained</a><a href="/faq">FAQ</a><a href="/about">About</a><a href="/contact">Contact</a>
+      <a class="btn btn-primary" href="https://calendar.app.google/dnq1rd28JYfRDZoRA" target="_blank" rel="noopener">Schedule a call</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="narrow">
+    <div class="eyebrow">CD coming due?</div>
+    <h1>Before you renew, compare it to a MYGA.</h1>
+    <p class="lead">A multi-year guaranteed annuity (MYGA) works a lot like a CD: a fixed rate, locked in for a set number of years. The differences, in rates and in taxes, can add up to real money.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="#calculator">Run the numbers</a>
+      <a class="btn btn-ghost" href="https://calendar.app.google/dnq1rd28JYfRDZoRA" target="_blank" rel="noopener">Get today's rates from Greg</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>CD vs. MYGA at a glance</h2>
+    <div class="table-wrap">
+      <table class="compare">
+        <thead><tr><th></th><th>Bank CD</th><th>MYGA</th></tr></thead>
+        <tbody>
+          <tr><th>Rate</th><td>Fixed for the term</td><td>Fixed for the term (often 2 to 10 years)</td></tr>
+          <tr><th>Taxes on interest</th><td>Taxed every year, even if you don't touch it</td><td>Tax-deferred until you withdraw it</td></tr>
+          <tr><th>Backed by</th><td>FDIC insurance, up to its limits</td><td>The financial strength and claims-paying ability of the issuing insurance company</td></tr>
+          <tr><th>Early access</th><td>Early withdrawal penalty, usually a few months of interest</td><td>Most allow about 10% a year free; more than that during the term carries a surrender charge</td></tr>
+          <tr><th>Before age 59&frac12;</th><td>No IRS penalty</td><td>Gains withdrawn before 59&frac12; may face a 10% IRS penalty</td></tr>
+          <tr><th>At the end of the term</th><td>Renew, cash out, or move it</td><td>Renew, cash out, move it, or turn it into lifetime income</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">MYGAs fit money you won't need for the length of the term. Money you may need soon belongs somewhere more liquid.</p>
+  </div>
+</section>
+
+<section id="calculator">
+  <div class="wrap">
+    <h2>CD vs. MYGA calculator</h2>
+    <p class="lead">Enter the rates you've been quoted. The example rates are placeholders, not current offers.</p>
+    <form class="calc" id="cd-calc" onsubmit="return false">
+      <div>
+        <div class="field"><label for="cd-amount">Amount</label>
+          <div class="input-wrap has-pre"><span class="pre">$</span><input type="number" id="cd-amount" value="100000" min="0" step="1000" inputmode="decimal"></div></div>
+        <div class="field"><label for="cd-rate">CD rate <span class="hint">(APY)</span></label>
+          <div class="input-wrap has-post"><input type="number" id="cd-rate" value="4.00" min="0" step="0.05" inputmode="decimal"><span class="post">%</span></div></div>
+        <div class="field"><label for="myga-rate">MYGA rate</label>
+          <div class="input-wrap has-post"><input type="number" id="myga-rate" value="5.00" min="0" step="0.05" inputmode="decimal"><span class="post">%</span></div></div>
+        <div class="field"><label for="cd-years">Years</label>
+          <select id="cd-years"><option>2</option><option>3</option><option>4</option><option selected>5</option><option>6</option><option>7</option><option>10</option></select></div>
+        <div class="field"><label for="cd-tax">Your tax bracket <span class="hint">(federal)</span></label>
+          <select id="cd-tax"><option value="0">0%</option><option value="10">10%</option><option value="12">12%</option><option value="22" selected>22%</option><option value="24">24%</option><option value="32">32%</option><option value="35">35%</option></select></div>
+      </div>
+      <div class="results" aria-live="polite">
+        <h3>After <span id="r-years">5 years</span>, after taxes</h3>
+        <div class="result-row"><span>CD, taxed each year</span><strong id="r-cd">&ndash;</strong></div>
+        <div class="result-row"><span>MYGA, taxed at the end</span><strong id="r-myga">&ndash;</strong></div>
+        <div class="result-row"><span>MYGA before taxes</span><strong id="r-myga-pre">&ndash;</strong></div>
+        <p style="margin:18px 0 0;font-size:15px">Difference</p>
+        <div class="result-big" id="r-diff">&ndash;</div>
+        <p class="note">Assumes the CD's interest is taxed yearly and reinvested, and the MYGA gain is taxed once, when withdrawn as a lump sum. State taxes not included. For illustration only.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="narrow">
+    <h2>What I'll do for you</h2>
+    <ul class="check">
+      <li>Pull current MYGA rates from multiple carriers, not just one</li>
+      <li>Check each company's financial strength rating</li>
+      <li>Match the term to when you'll actually need the money</li>
+      <li>Show you the surrender schedule and free-withdrawal terms in plain English</li>
+      <li>Tell you if renewing your CD is the better move</li>
+    </ul>
+    <div class="callout"><p><strong>Rates change often.</strong> I keep specific rates off this site so they're never out of date. Schedule a call and I'll show you today's numbers for your amount and term.</p></div>
+  </div>
+</section>
+<section class="dark">
+  <div class="narrow center">
+    <h2>Have a question about your money?</h2>
+    <p>Bring me the numbers: a CD that's coming due, a 401(k) you're about to roll over, or an illustration someone sent you. I'll give you a straight read on it. The call is free and commits you to nothing.</p>
+    <div class="btn-row" style="justify-content:center">
+      <a class="btn btn-brass" href="https://calendar.app.google/dnq1rd28JYfRDZoRA" target="_blank" rel="noopener">Schedule a call</a>
+      <a class="btn btn-ghost" style="border-color:#F1D9A8;color:#F1D9A8" href="tel:+15127640723">Call or text 512.764.0723</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Ask Greg About Annuities</h4>
+        <p>Greg Stevens, independent licensed financial professional.<br>Austin, Texas. Licensed since 2004.</p>
+        <p><a href="tel:+15127640723">512.764.0723</a><br><a href="mailto:greg@askgregaboutannuities.com">greg@askgregaboutannuities.com</a></p>
+      </div>
+      <div>
+        <h4>Start here</h4>
+        <ul>
+          <li><a href="/cd-alternatives">CD coming due?</a></li>
+          <li><a href="/retirement-income">Retirement income</a></li>
+          <li><a href="/income-gap-calculator">Income gap calculator</a></li>
+          <li><a href="/questions-to-ask">5 questions before you buy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Learn more</h4>
+        <ul>
+          <li><a href="/annuities-explained">Annuities in plain English</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/about">About Greg</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="disclaimer">
+      <p>This site is for general information only. It is not a recommendation to buy any specific product and is not tax or legal advice. Annuities are long-term insurance contracts. Features, rates and availability vary by carrier and state. Guarantees are backed by the financial strength and claims-paying ability of the issuing insurance company. Withdrawals above the contract's free amount during the surrender period may be subject to surrender charges, and withdrawals before age 59&frac12; may be subject to a 10% IRS penalty. Talk with Greg directly before making any decision. Not affiliated with any single insurance carrier.</p>
+      <p>&copy; 2026 Greg Stevens, Ask Greg About Annuities &middot; <a href="/privacy">Privacy Policy</a> &middot; <a href="/terms">Terms &amp; SMS Terms</a></p>
+    </div>
+  </div>
+</footer>
+<script src="/site.js"></script>
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6abc263bb9739b9592ab30f6"></script>
+</body>
+</html>
