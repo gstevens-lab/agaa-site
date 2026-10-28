@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PM19LN1GNK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PM19LN1GNK');
+</script>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1929619905112145');fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1929619905112145&ev=PageView&noscript=1" alt=""></noscript>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Long Will My Savings Last? Free Retirement Calculator | Ask Greg About Annuities</title>
+<meta name="description" content="Free calculator: see roughly how many years your retirement savings will last, based on your withdrawals, returns and inflation.">
+<link rel="canonical" href="https://askgregaboutannuities.com/savings-calculator">
+<meta property="og:title" content="How Long Will My Savings Last? Free Retirement Calculator">
+<meta property="og:description" content="Free calculator: see roughly how many years your retirement savings will last, based on your withdrawals, returns and inflation.">
+<meta property="og:url" content="https://askgregaboutannuities.com/savings-calculator">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://askgregaboutannuities.com/og-income.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="mark">AG</span>Ask Greg About Annuities</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav">
+      <a href="/cd-alternatives">CD Coming Due?</a><a href="/retirement-income">Retirement Income</a><a href="/annuities-explained">Annuities Explained</a><a href="/faq">FAQ</a><a href="/blog">Blog</a><a href="/about">About</a><a href="/contact">Contact</a>
+      <a class="btn btn-primary" href="/book">Schedule a call</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" style="padding-bottom:30px">
+  <div class="narrow">
+    <div class="eyebrow">Free calculator</div>
+    <h1>How long will my savings last?</h1>
+    <p class="lead">Enter what you have saved and what you plan to take out each month. See roughly how many years your money lasts, with your withdrawals rising each year for inflation.</p>
+  </div>
+</section>
+<section style="padding-top:20px">
+  <div class="wrap">
+    <form class="calc" id="last-calc" onsubmit="return false">
+      <div>
+        <div class="field"><label for="l-bal">Savings you'll draw from</label>
+          <div class="input-wrap has-pre"><span class="pre">$</span><input type="number" id="l-bal" value="400000" min="0" step="1000" inputmode="decimal"></div></div>
+        <div class="field"><label for="l-wd">Monthly withdrawal <span class="hint">(your income gap)</span></label>
+          <div class="input-wrap has-pre"><span class="pre">$</span><input type="number" id="l-wd" value="2000" min="0" step="50" inputmode="decimal"></div></div>
+        <div class="field"><label for="l-ret">Average yearly return <span class="hint">(%)</span></label>
+          <div class="input-wrap"><input type="number" id="l-ret" value="5" min="-10" max="15" step="0.25" inputmode="decimal"></div></div>
+        <div class="field"><label for="l-inf">Inflation <span class="hint">(% your withdrawals rise each year)</span></label>
+          <div class="input-wrap"><input type="number" id="l-inf" value="3" min="0" max="10" step="0.25" inputmode="decimal"></div></div>
+        <div class="field"><label for="l-age">Your age today</label>
+          <div class="input-wrap"><input type="number" id="l-age" value="65" min="40" max="100" step="1" inputmode="numeric"></div></div>
+      </div>
+      <div class="results" aria-live="polite">
+        <h3>Your savings would last about</h3>
+        <div class="result-big" id="l-years">&ndash;</div>
+        <div class="result-row"><span>Money runs out around age</span><strong id="l-runout">&ndash;</strong></div>
+        <div class="result-row"><span>First-year withdrawals</span><strong id="l-first">&ndash;</strong></div>
+        <div class="result-row"><span>Withdrawal rate</span><strong id="l-rate">&ndash;</strong></div>
+        <p style="margin-top:16px;font-size:15px" id="l-msg"></p>
+        <p class="note">Assumes the same return every year. Real markets go up and down, and bad years early in retirement shorten this a lot. Does not include taxes. For illustration only.</p>
+        <a class="btn btn-brass" style="margin-top:10px" href="/book">Talk through my numbers</a>
+      </div>
+    </form>
+  </div>
+</section>
+<section class="alt">
+  <div class="narrow">
+    <h2>Why the real answer can be shorter</h2>
+    <p>This calculator uses a steady average return. Real returns arrive in a random order, and a few bad years right after you retire can cut years off how long your money lasts, even with the same average. That's called sequence-of-returns risk. <a href="/blog/sequence-of-returns-retirement-income">Here's how it works &rarr;</a></p>
+    <p>Not sure what to enter for the monthly withdrawal? Start with the <a href="/income-gap-calculator">income gap calculator</a>.</p>
+  </div>
+</section>
+<section class="dark">
+  <div class="narrow center">
+    <h2>Have a question about your money?</h2>
+    <p>Bring me the numbers: a CD that's coming due, a 401(k) you're about to roll over, or an illustration someone sent you. I'll give you a straight read on it. The call is free and commits you to nothing.</p>
+    <div class="btn-row" style="justify-content:center">
+      <a class="btn btn-brass" href="/book">Schedule a call</a>
+      <a class="btn btn-ghost" style="border-color:#F1D9A8;color:#F1D9A8" href="tel:+15127640723">Call or text 512.764.0723</a>
+    </div>
+  </div>
+</section>
+</main>
+<script>
+(function(){
+  var f=document.getElementById('last-calc'); if(!f) return;
+  function v(id){var n=parseFloat(document.getElementById(id).value);return isNaN(n)?0:n;}
+  function $(n){return '$'+Math.round(n).toLocaleString('en-US');}
+  function calc(){
+    var bal=v('l-bal'), wd=v('l-wd')*12, r=v('l-ret')/100, inf=v('l-inf')/100, age=v('l-age');
+    var years=0, b=bal, w=wd;
+    if(wd<=0){set('l-years','Indefinitely');set('l-runout','&ndash;');}
+    else{
+      while(b>0 && years<60){ b=b*(1+r); if(b>=w){b-=w;years+=1;} else {years+=b/w;b=0;} w*=1+inf; }
+      if(years>=60){set('l-years','60+ years');set('l-runout','Beyond '+(age+60));}
+      else{ set('l-years',(Math.round(years*10)/10)+' years'); set('l-runout',Math.floor(age+years)); }
+    }
+    set('l-first',$(wd)); set('l-rate', bal>0?(Math.round(wd/bal*1000)/10)+'%':'&ndash;');
+    var msg = years>=30?'That covers a long retirement, as long as returns hold up.':(years>=20?'That may be cutting it close if you live into your 90s.':'Your savings may run out well before you do. There are ways to stretch them.');
+    set('l-msg', wd>0?msg:'');
+  }
+  function set(id,t){document.getElementById(id).innerHTML=t;}
+  f.addEventListener('input',calc); calc();
+})();
+</script>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Ask Greg About Annuities</h4>
+        <p>Greg Stevens, independent licensed financial professional.<br>Austin, Texas. Licensed since 2004.<br>TX license #1291485 &middot; NPN 8230713</p>
+        <p><a href="tel:+15127640723">512.764.0723</a><br><a href="mailto:greg@askgregaboutannuities.com">greg@askgregaboutannuities.com</a></p>
+        <p class="footer-social"><a href="https://www.facebook.com/askgregaboutannuities" target="_blank" rel="noopener">Facebook</a> &middot; <a href="https://www.youtube.com/@askgregaboutannuities" target="_blank" rel="noopener">YouTube</a></p>
+      </div>
+      <div>
+        <h4>Start here</h4>
+        <ul>
+          <li><a href="/cd-alternatives">CD coming due?</a></li>
+          <li><a href="/retirement-income">Retirement income</a></li>
+          <li><a href="/income-gap-calculator">Income gap calculator</a></li>
+          <li><a href="/savings-calculator">How long will my savings last?</a></li>
+          <li><a href="/questions-to-ask">5 questions before you buy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Learn more</h4>
+        <ul>
+          <li><a href="/annuities-explained">Annuities in plain English</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/videos">Videos</a></li>
+          <li><a href="/about">About Greg</a></li>
+          <li><a href="/annuity-advisor-austin">Annuity help in Austin</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="disclaimer">
+      <p>This site is for general information only. It is not a recommendation to buy any specific product and is not tax or legal advice. Annuities are long-term insurance contracts. Features, rates and availability vary by carrier and state. Guarantees are backed by the financial strength and claims-paying ability of the issuing insurance company. Withdrawals above the contract's free amount during the surrender period may be subject to surrender charges, and withdrawals before age 59&frac12; may be subject to a 10% IRS penalty. Talk with Greg directly before making any decision. Not affiliated with any single insurance carrier.</p>
+      <p>&copy; 2026 Greg Stevens, Ask Greg About Annuities &middot; <a href="/privacy">Privacy Policy</a> &middot; <a href="/terms">Terms &amp; SMS Terms</a></p>
+    </div>
+  </div>
+</footer>
+<script src="/site.js"></script>
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6abc263bb9739b9592ab30f6"></script>
+</body>
+</html>

@@ -300,3 +300,12 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--brass); out
 .site-header .wrap { max-width: 1180px; }
 .nav { gap: 18px; }
 @media (max-width: 420px) { .brand { font-size: 18px; } .brand .mark { width: 30px; height: 30px; } }
+
+/* added: mid-post CTA, footer social, guide box, video grid */
+.post-midcta{margin:28px 0;padding:18px 22px;border-left:4px solid var(--brass,#B98A3E);background:var(--paper,#FFFDF8);border-radius:8px}
+.post-midcta p{margin:0}
+.footer-social a{text-decoration:underline}
+.guide-box{margin:32px 0;padding:26px 28px;border:1px solid var(--line,#D6CBAE);border-radius:14px;background:var(--paper,#FFFDF8)}
+.guide-box h3{margin-top:0}
+.video-grid{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.video-grid h3{margin:12px 0 4px}
