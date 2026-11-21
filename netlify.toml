@@ -6,3 +6,16 @@
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Old domain: permanently redirect every page to the same page on the new domain
+[[redirects]]
+  from = "https://askgregaboutannuities.com/*"
+  to = "https://askgregaboutretirement.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.askgregaboutannuities.com/*"
+  to = "https://askgregaboutretirement.com/:splat"
+  status = 301
+  force = true
